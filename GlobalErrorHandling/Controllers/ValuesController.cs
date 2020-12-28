@@ -24,7 +24,7 @@ namespace GlobalErrorHandling.Controllers
 
             throw new Exception("Exception while fetching all the students from the storage.");
 
-            _logger.LogInfo($"Returning  {students.Count} students.");
+            _logger.LogInfo($"Returning {students.Count} students.");
 
             return Ok(students);
         }
